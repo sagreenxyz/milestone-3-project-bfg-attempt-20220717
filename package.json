@@ -2,11 +2,13 @@
   "name": "milestone-3-project",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "ts-node": "ts-node --compiler-options '{\"module\": \"CommonJS\"}'"
   },
   "prisma": {
     "seed": "node prisma/seed.js"
