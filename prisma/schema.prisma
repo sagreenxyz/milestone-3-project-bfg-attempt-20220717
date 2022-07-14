@@ -14,6 +14,7 @@ model equipment {
   id           Int     @id @default(autoincrement())
   name         String
   model        String
+  price        String
   manufacturer String
   image        String
   category     String
