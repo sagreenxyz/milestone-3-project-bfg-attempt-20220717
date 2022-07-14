@@ -1,33 +1,94 @@
 import { PrismaClient } from '@prisma/client';
-import faker from "faker";
+import {faker} from "@faker-js/faker";
 
 const prisma = new PrismaClient();
 
 async function main() {
-    for (let i=0; i<10; i++) {
+    await prisma.equipment.deleteMany();
+    await prisma.user.deleteMany();
+
+    for (let i=0; i<5; i++) {
         await prisma.user.create({
             data: {
-                email: `${faker.inter}`,
-                name: "Joe Bob",
+                email: `${faker.internet.email()}`,
+                name: `${faker.name.firstName()} ${faker.name.lastName()}`,
                 rentals: {
                     create: [
-                        {       name: "Air Compressor",
-                                model: "P185",
-                                manufacturer: "Doosan",
-                                image: "https://media.sunbeltrentals.com/is/image/sunbeltrentals/catClass_0010030?fmt=webp",
-                                category: "Air Compressors and Air Tools",
-                                description: "Lorem ipsum..."},
-                        {       name: "Double Drum Roller",
-                                model: "AR13HAR",
-                                manufacturer: "Multiquip",
-                                image: "https://media.sunbeltrentals.com/is/image/sunbeltrentals/catClass_0220120?fmt=webp",
-                                category: "Compaction",
-                                description: "Lorem ipsum..."},
+                        {   
+                            name: faker.commerce.productName(),
+                            model: faker.random.numeric(5),
+                            manufacturer: faker.name.lastName(),
+                            price: faker.commerce.price(0, 200, 0, '$'),
+                            image: faker.image.abstract(480, 480, true),
+                            category: "Air Compressor And Air Tools",
+                            isAvailable: false,
+                            description: faker.lorem.lines(3),
+                        },
+                        {       
+                            name: faker.commerce.productName(),
+                            model: faker.random.numeric(5),
+                            manufacturer: faker.name.lastName(),
+                            price: faker.commerce.price(0, 200, 0, '$'),
+                            image: faker.image.cats(480, 480, true),
+                            category: "Heating, Venilation, And Air Conditioning",
+                            isAvailable: false,
+                            description: faker.lorem.lines(3),
+                        },
+                        {
+                            name: faker.commerce.productName(),
+                            model: faker.random.numeric(5),
+                            manufacturer: faker.name.lastName(),
+                            price: faker.commerce.price(0, 200, 0, '$'),
+                            image: faker.image.image(480, 480, true),
+                            category: "Lawn, Landscape, And Tree",
+                            isAvailable: false,
+                            description: faker.lorem.lines(3),
+                        },
                     ],
                 },
             },
         });
     }
+
+    // for (let i=0; i<2; i++) {
+    //     await prisma.equipment.create({
+    //         data: {
+    //                 name: faker.commerce.productName(),
+    //                 model: faker.random.numeric(5),
+    //                 manufacturer: faker.name.lastName(),
+    //                 price: faker.commerce.price(0, 200, 0, '$'),
+    //                 image: faker.image.abstract(480, 480, true),
+    //                 category: "Air Compressor And Air Tools",
+    //                 description: faker.lorem.lines(3),
+    //         },
+    //     });
+    // }
+    // for (let i=0; i<2; i++) {
+    //     await prisma.equipment.create({
+    //         data: {
+    //                 name: faker.commerce.productName(),
+    //                 model: faker.random.numeric(5),
+    //                 manufacturer: faker.name.lastName(),
+    //                 price: faker.commerce.price(0, 200, 0, '$'),
+    //                 image: faker.image.cats(480, 480, true),
+    //                 category: "Heating, Venilation, And Air Conditioning",
+    //                 description: faker.lorem.lines(3),
+    //         },
+    //     });
+    // }
+    // for (let i=0; i<2; i++) {
+    //     await prisma.equipment.create({
+    //         data: {
+    //                 name: faker.commerce.productName(),
+    //                 model: faker.random.numeric(5),
+    //                 manufacturer: faker.name.lastName(),
+    //                 price: faker.commerce.price(0, 200, 0, '$'),
+    //                 image: faker.image.image(480, 480, true),
+    //                 category: "Lawn, Landscape, And Tree",
+    //                 description: faker.lorem.lines(3),
+    //         },
+    //     });
+    // }
 }
 
 main().catch (e => {
