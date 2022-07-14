@@ -10,3 +10,27 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model Equipment {
+  id          Int     @id @default(autoincrement())
+  name        String
+  image       String
+  category    String
+  isAvailable Boolean @default(true)
+  description String
+  renter      User    @relation(fields: [userId], references: [id])
+  userId      Int //foreign key tied to primary key "id" in User table
+}
+
+model User {
+  id      Int         @id @default(autoincrement())
+  email   String      @unique
+  name    String
+  rentals Equipment[]
+  role    Role        @default(USER)
+}
+
+enum Role {
+  USER
+  EMPLOYEE
+  ADMIN
+}
