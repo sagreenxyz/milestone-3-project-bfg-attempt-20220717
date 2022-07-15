@@ -9,7 +9,7 @@ export default function Home() {
 
 
   return (
-    <div className="bg-gray-600 flex">
+    <div className="bg-gray-400 flex">
       
       {data.map((x) => {
         return (
