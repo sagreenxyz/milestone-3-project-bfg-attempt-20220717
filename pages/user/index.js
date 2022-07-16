@@ -1,6 +1,6 @@
 
 
-export default function Log_In () {
+export default function Users () {
     return (
         <div>
             This is the log in page
