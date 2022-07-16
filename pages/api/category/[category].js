@@ -2,11 +2,11 @@ import prisma from "../../../lib/prisma"
 
 export default async function handler(req, res) {
 
-    const { equipmentId } = req.query
+    const { category } = req.query
 
     try {
-        const equipmentFound = await prisma.equipment.findOne({
-            where: {id: equipmentId}
+        const equipmentFound = await prisma.equipment.findMany({
+            where: {category: category}
         })
         res.status(200).json(equipmentFound)
     } catch (err) {
