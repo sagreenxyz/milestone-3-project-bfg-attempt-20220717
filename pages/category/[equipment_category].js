@@ -1,6 +1,6 @@
 import { useRouter } from "next/router"
-import Card from "../../../components/Card"
 import useSWR from "swr"
+import Card from "../../components/Card"
 
 
 export default function Equipment_id () {
@@ -10,7 +10,7 @@ export default function Equipment_id () {
     const equipment_id = router.query.equipment_id
     const equipment_category = router.query.equipment_category
     const fetcher = (...args) => fetch(...args).then(res => res.json())
-    const { data, error } = useSWR('/api/equipment/by_id', fetcher)
+    const { data, error } = useSWR('/api/equipment/', fetcher)
     if (error) return <div>An error occured.</div>
     if (!data) return <div>Loading...</div>
     
