@@ -1,5 +1,6 @@
 import { useRouter } from "next/router"
-import Card from "../../components/Card"
+import Card from "../../../components/Card"
+
 
 export default function Equipment_id () {
     let data = ['mower', 'weed eater', 'back hoe', 'tractor']
@@ -14,7 +15,7 @@ export default function Equipment_id () {
         <div>
             <h1>Equipment Category: {equipment_category}</h1>
             <h1>Equipment id: {equipment_id}</h1>
-            <Card name={item} />
+            <Card name ={item}/>
         </div>
     )
 }
