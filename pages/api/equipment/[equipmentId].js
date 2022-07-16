@@ -1,12 +1,15 @@
-import prisma from "../../../lib/prisma"
+import { PrismaClient } from "@prisma/client";
+
+const prisma = new PrismaClient();
 
 export default async function handler(req, res) {
 
     const { equipmentId } = req.query
 
     try {
-        const equipmentFound = await prisma.equipment.findOne({
-            where: {id: equipmentId}
+        //findUnique not findOne
+        const equipmentFound = await prisma.equipment.findUnique({
+            where: {id: parseInt(equipmentId)}
         })
         res.status(200).json(equipmentFound)
     } catch (err) {
