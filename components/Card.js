@@ -4,9 +4,9 @@ export default function Card(props) {
     return (
         <div>
             <div class="max-w-sm rounded overflow-hidden shadow-lg">
-                <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains"></img>
+                <img class="w-full" src={props.equipment.image} alt="Sunset in the mountains"></img>
                 <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">{props.name}</div>
+                    <div class="font-bold text-xl mb-2">{props.equipment.name}</div>
                     <p class="text-gray-700 text-base">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
                     </p>
