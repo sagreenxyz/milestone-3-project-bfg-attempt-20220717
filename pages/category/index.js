@@ -1,5 +1,6 @@
+
 import { useRouter } from "next/router"
-import Card from "../../../components/Card"
+import Card from "../../components/Card"
 import useSWR from "swr"
 
 function equipment_category() {

@@ -4,12 +4,12 @@ const prisma = new PrismaClient();
 
 export default async function handler(req, res) {
 
-    const { equipmentId } = req.query
+    const { id } = req.query
 
     try {
         //findUnique not findOne
         const equipmentFound = await prisma.equipment.findUnique({
-            where: {id: parseInt(equipmentId)}
+            where: {id: parseInt(id)}
         })
         res.status(200).json(equipmentFound)
     } catch (err) {
