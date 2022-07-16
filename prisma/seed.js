@@ -19,7 +19,7 @@ async function main() {
                             model: faker.random.numeric(5),
                             manufacturer: faker.name.lastName(),
                             price: faker.commerce.price(0, 200, 0, '$'),
-                            image: faker.image.abstract(480, 480, true),
+                            image: faker.image.abstract(250, 250, true),
                             category: "Air Compressor And Air Tools",
                             isAvailable: false,
                             description: faker.lorem.lines(3),

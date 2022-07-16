@@ -5,7 +5,6 @@ import useSWR from 'swr'
 
 
 export default function Home() {
-  // let data = ['mower', 'weed eater', 'back hoe', 'tractor', 'shovel', 'hammer', 'chain saw', 'bulldozer',]
   const fetcher = (...args) => fetch(...args).then(res => res.json())
   const { data, error } = useSWR('/api/equipment', fetcher)
   if (error) return <div>An error occured.</div>
