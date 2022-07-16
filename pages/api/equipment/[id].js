@@ -9,7 +9,7 @@ export default async function handler(req, res) {
     try {
         //findUnique not findOne
         const equipmentFound = await prisma.equipment.findUnique({
-            where: {id: parseInt(equipmentId)}
+            where: {id: parseInt(id)}
         })
         res.status(200).json(equipmentFound)
     } catch (err) {
