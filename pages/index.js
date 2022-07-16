@@ -1,7 +1,7 @@
 import { data } from "browserslist"
 import Card from "../components/Card"
 import Side_Nav from "../components/Side_Nav"
-
+import useSWR from 'swr'
 
 
 export default function Home() {
