@@ -106,7 +106,6 @@ iRent is an application that resembles a customer-facing website for a fictional
 * [![Node][Node.js]][Node-url]
 * [![Prisma][Prisma.io]][Prisma-url]
 * [![Postgresql][Postgresql.org]][Postgresql-url]
-* [![JQuery][JQuery.com]][JQuery-url]
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -138,8 +137,7 @@ This is an example of how to list things you need to use the software and how to
 <!-- CONTRIBUTING -->
 ## Contributing
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+If you have a suggestion that would make this better, please fork the repo and create a pull request.
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/NewFeature`)
@@ -168,7 +166,6 @@ Don't forget to give the project a star! Thanks again!
     <a href="https://github.com/Vivonzty15"><strong>Braxtons's Github »</strong></a>
     <br />
     <br />
-
   </p>
 </div>
 
@@ -202,7 +199,7 @@ Use this space to list resources you find helpful and would like to give credit 
 [linkedin-url-braxton]: https://www.linkedin.com/in/bnallen/
 [linkedin-shield-ben]: https://img.shields.io/badge/-LinkedIn_Ben-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url-ben]: https://www.linkedin.com/in/benjamin-froehlich-934650a2/
-[product-screenshot]: images/logo.JPG
+[irent-screenshot]: images/logo.JPG
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
