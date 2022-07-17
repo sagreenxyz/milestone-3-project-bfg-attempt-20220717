@@ -1,7 +1,6 @@
 <div id="top"></div>
 
 [![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![LinkedIn Scott][linkedin-shield-scott]][linkedin-url-scott]
 [![LinkedIn Scott][linkedin-shield-braxton]][linkedin-url-braxton]
@@ -14,8 +13,6 @@
   <a href="https://github.com/sagreenxyz/milestone-3-project">
     <img src="images/logo.JPG" alt="Logo" width="80" height="80">
   </a>
-
-  <h3 align="center">iRent</h3>
 
   <p align="center">
     iRent is an app where users can view and order rental equipment for various types of projects!
@@ -98,6 +95,8 @@ iRent is an application that resembles a customer-facing website for a fictional
 | /equipment/:id/edit | `equipment/""` | Form for editing a place                                                        |
 | /category/:name     | `category/""`  |                                                                                   | 
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ### Built With
 
 * [![Next][Next.js]][Next-url]
@@ -152,13 +151,26 @@ Don't forget to give the project a star! Thanks again!
 
 <!-- CONTACT -->
 ## Contact
+<div align="center">
+  <p align="center">
+    Benjamin Froehlich - bdfroehlich0@gmail.com
+    <br />
+    <a href="https://github.com/bdfroehlich"><strong>Benjamin's Github »</strong></a>
+    <br />
+    <br />
+    Scott Green - email@domain.com
+    <br />
+    <a href="https://github.com/sagreenxyz"><strong>Scott's Github »</strong></a>
+    <br />
+    <br />
+    Braxton Allen - email@domain.com
+    <br />
+    <a href="https://github.com/Vivonzty15"><strong>Braxtons's Github »</strong></a>
+    <br />
+    <br />
 
-Benjamin Froehlich - bdfroehlich0@gmail.com
-[Github Link](https://github.com/bdfroehlich)
-Scott Green - email@domain.com
-[Github Link](https://github.com/sagreenxyz)
-Braxton Allen - email@domain.com
-[Github Link](https://github.com/Vivonzty15)
+  </p>
+</div>
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -172,7 +184,7 @@ Use this space to list resources you find helpful and would like to give credit 
 
 * [Img Shields](https://shields.io)
 * [SWR](https://swr.vercel.app/)
-* [Othneildrew](https://github.com/othneildrew/Best-README-Template)
+* [Othneildrew Best Readme](https://github.com/othneildrew/Best-README-Template)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -201,7 +213,7 @@ Use this space to list resources you find helpful and would like to give credit 
 [NextAuth-url]: https://next-auth.js.org/
 [Node.js]: https://img.shields.io/badge/Node.js-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
 [Node-url]: https://nodejs.org/en/
-[Prisma.ui]: https://img.shields.io/badge/Prisma.io-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
+[Prisma.io]: https://img.shields.io/badge/Prisma.io-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
 [Prisma-url]: https://www.prisma.io/
 [Postgresql.org]: https://img.shields.io/badge/Postgresql-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Postgresql-url]: https://www.postgresql.org/
