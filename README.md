@@ -66,7 +66,7 @@
 ## About The Project
 <div align="center">
   <a href="https://github.com/sagreenxyz/milestone-3-project">
-    <img src="images/product.JPG" alt="Logo" width="80" height="80">
+    <img src="images/product.JPG" alt="Logo" style="max-width 100%">
   </a>
 </div>
 
