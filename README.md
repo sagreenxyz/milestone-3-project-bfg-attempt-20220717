@@ -166,7 +166,6 @@ If you have a suggestion that would make this better, please fork the repo and c
     <a href="https://github.com/Vivonzty15"><strong>Braxtons's Github »</strong></a>
     <br />
     <br />
-
   </p>
 </div>
 
