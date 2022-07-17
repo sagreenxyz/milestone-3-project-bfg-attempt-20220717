@@ -64,8 +64,11 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-[![iRent Screen Shot][irent-screenshot]](images/product.JPG)
+<div align="center">
+  <a href="https://github.com/sagreenxyz/milestone-3-project">
+    <img src="images/product.JPG" alt="Logo" width="80" height="80">
+  </a>
+</div>
 
 iRent is an application that resembles a customer-facing website for a fictional equipment rental company.This allows for many ideas to be built upon. For a minimum viable product, allow customers to register, view available equipment, and add rental equipment to their cart.  Authorization is provided to allow employees and admins the ability to edit equipment, delete equipment, and check equipment back into the list of available rentals.
 
