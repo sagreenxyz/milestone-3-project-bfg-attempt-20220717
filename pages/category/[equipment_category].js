@@ -15,11 +15,13 @@ export default function equipmentCategory () {
     return (
         <div>
             <h1>Equipment Category: {equipment_category}</h1>
-            {data.map((item) => {
+            <div className="grid gap-4 grid-cols-4 ">
+                {data.map((item) => {
                     return (
-                        <Card equipment={item} />
+                        <Card equipment={item}/>
                     )
                 })}
+            </div>
         </div>
     )
 }
